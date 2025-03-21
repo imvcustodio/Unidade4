@@ -5,23 +5,17 @@ public class Uni4Exe06 {
         Scanner scanner = new Scanner(System.in);
         String letter = scanner.nextLine();
 
-        String converted = letter.toUpperCase();
 
-            switch (converted) {
-                case "F":
+            if (letter.equalsIgnoreCase("F")) {
                 System.out.println("feminino"); 
-                    break;
-                case "M":
+            }else if (letter.equalsIgnoreCase("M")) {
                 System.out.println("Masculino");
-                    break;
-                case"I":
+            }else if (letter.equalsIgnoreCase("I")) {
                 System.out.println("Não informado");
-                    break;
-                
-                default:
+            }else{
                 System.out.println("Entrada incorrerta");
-                    break;
             }
+
         
         scanner.close();
     }
