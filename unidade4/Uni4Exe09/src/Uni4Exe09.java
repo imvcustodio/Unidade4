@@ -1,10 +1,7 @@
 import java.util.Scanner;
-/*
-Para verificar se um número é ou não múltiplo de outro, devemos 
-encontrar um número inteiro de forma que a multiplicação entre 
-eles resulte no primeiro número. Veja os exemplos: → O número 49 é 
-múltiplo de 7,
- pois existe número inteiro que, multiplicado por 7, resulta em 49. */
+/*entrada: num, num2
+processo: se num%num2 == 0 ou num2%num == 0 caso seja sao multiplos caso não seja não sao multiplos
+saida: os valores sao multiplos ou os valore não são multiplos*/
 public class Uni4Exe09 {
     public static void main(String[] args) throws Exception {
         Scanner scanner = new Scanner(System.in);
@@ -13,7 +10,7 @@ public class Uni4Exe09 {
         System.out.println("Informe um numero:  "); 
         int num2 = scanner.nextInt();
         
-        if (num%num2 == 0) {
+        if (num%num2 == 0 || num2%num == 0) {
             System.out.println("os valore são multiplos");
         }else{
             System.out.println("os valore não são multiplos");
