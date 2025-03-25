@@ -1,6 +1,12 @@
 import java.util.Scanner;
 
 public class Uni4Exe23 {
+    /*entradas: num
+    processo: se num == 1 mes = janeiro,se num == 2 mes = fevereiro ,se num == 3 mes = março, se num == 4 mes = abril, se num == 5 mes = maio, se num == 6 mes = junho
+    se num == 7 mes = julho, se num == 8 mes = agosto, se num == 9 mes = setembro, se num == 10 mes = outubro, se num == 11 mes = novembro, se num == 12 mes = dezembro
+    se num > 12 imprima valor invalidao
+    saida: mes
+     */
     public static void main(String[] args) throws Exception {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Numero inteiro positivo: ");
