@@ -9,8 +9,8 @@ public class Uni4Exe06 {
         //saida: Feminino, masculino, Não informado ou Entrada incorreta
     public static void main(String[] args) throws Exception {
         Scanner scanner = new Scanner(System.in);
-        String letter = scanner.nextLine();
-        char l = letter.toUpperCase().charAt(0);
+        String palavra = scanner.nextLine();
+        char l = palavra.toUpperCase().charAt(0);
 
             if (l == 'F') {
                 System.out.println("feminino"); 
