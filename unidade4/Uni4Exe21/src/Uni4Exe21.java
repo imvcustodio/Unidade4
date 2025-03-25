@@ -1,9 +1,11 @@
 import java.util.Scanner;
 
 public class Uni4Exe21 {
-    /**
-     * @param args
-     * @throws Exception
+    /*entradas massa, altura
+    processo: imc recebe o valor de calculo que é massa dividido por altura ao quadrado (massa/(Math.pow(altura, 2)), se o imc<18.5 classificacao = Magreza
+    se o imc>=18.5 && imc<=24.9 classificacao = Saudavel, se imc>=25 && imc<=29.9 classificacao = Sobrepeso, se imc>=30 && imc<=34.9  classificacao = Obesidade Grau 1
+    se imc>=35 && imc<=39.9 classificacao = Obesidade Grau 2(severa), senao  classificação = "Obesidade Grau 3(mórbida)";
+    saida: classificacao
      */
     public static void main(String[] args) throws Exception {
         Scanner scanner = new Scanner(System.in);
@@ -14,23 +16,23 @@ public class Uni4Exe21 {
 
         
         double imc = (massa/(Math.pow(altura, 2)));
-        String classificação;
+        String classificacao;
 
         if (imc<18.5) {
-            classificação = "Magreza";
+            classificacao = "Magreza";
         }else if (imc>=18.5 && imc<=24.9) {
-            classificação = "Saudavel";
+            classificacao = "Saudavel";
         }else if (imc>=25 && imc<=29.9) {
-            classificação = "Sobrepeso";
+            classificacao = "Sobrepeso";
         }else if (imc>=30 && imc<=34.9) {
-            classificação = "Obesidade Grau 1";
+            classificacao = "Obesidade Grau 1";
         }else if (imc>=35 && imc<=39.9) {
-            classificação = "Obesidade Grau 2(severa)";
+            classificacao = "Obesidade Grau 2(severa)";
         }else{
-            classificação = "Obesidade Grau 3(mórbida)";
+            classificacao = "Obesidade Grau 3(mórbida)";
         }
 
-        System.out.println(classificação);
+        System.out.println(classificacao);
         scanner.close();
     }
 }
