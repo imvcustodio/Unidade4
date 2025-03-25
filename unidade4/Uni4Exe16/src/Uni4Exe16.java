@@ -1,5 +1,11 @@
 import java.util.Scanner;
-
+/*entrada:homem1, homem2, mulher1,mulher2
+processo: verificar qual o homem é mais velho entre os 2 e o acrescentar a variavel homemV e acrescentar o que não seja o mais velho a variavel homemN
+verificar qual a mulher é mais velha entre as 2 e o acrescentar a variavel mulherV e acrescentar a que não seja a mais velha a variavel mulherN
+soma = homemV+mulherN
+produto = homemN*mulherV
+saida: soma e produto
+*/
 public class Uni4Exe16 {
     public static void main(String[] args) throws Exception {
         Scanner scanner = new Scanner(System.in);
