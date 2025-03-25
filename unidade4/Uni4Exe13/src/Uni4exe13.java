@@ -1,6 +1,13 @@
 import java.util.Scanner;
 
 public class Uni4exe13 {
+    /*entrada: carta1,carta2,carta3
+    processo: se a carta1 for 1 ,2 ou 3 qntCartaBoa recebe 1; se carta2 for 1 ,2 ou 3 qntCartaBoa recebe qntCartaBoa + 1;
+    se carta3 for 1 ,2 ou 3 qntCartaBoa recebe qntCartaBoa + 1
+    se qntCartaBoa 1 imprima TRUCO
+    se qntCartaBoa 2 imprima SEIS
+    se qntCartaBoa 3 imprima NOVE
+    saida: TRUCO, SEIS ou NOVE*/
     public static void main(String[] args) throws Exception {
         Scanner scanner = new Scanner(System.in);
         System.out.println("carta1");
