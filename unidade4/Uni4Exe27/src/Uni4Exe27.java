@@ -2,6 +2,16 @@ import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class Uni4Exe27 {
+    /*entrada: horaChegada, minutoChegada, horaSaida e minutoSaida
+     * processo: totalMinutos = (horaSaida * 60 + minutoSaida) - (horaChegada * 60 + minutoChegada), para 
+     * converter tudo para minutos e ficar mais facil de fazer a precificação, horas = totalMinutos/60 para pegar as horas e minRest = totalMinutos%60 para pegar os minutos,
+     * horacobrada = horas crio uma nova variavel para armazenar as horas, apos isso , verifico se minRest for maior que 29 caso seja horas recebe horas+1 e horasCobradas recebe horas
+     * caso minRest for menor que trinta horasCobradas = horas, apos eu verifico se as horasCobradas sao igual a 0 caso seja ela se torna 1
+     * Se horacobrada for 1 ou 2, o valorCobrar é calculado como horacobrada * 5.
+       Se horacobrada for 3 ou 4, o cálculo muda para 10 + (horacobrada - 2) * 7.5.
+       Para horacobrada maior que 4, aplica-se 25 + (horacobrada - 4) * 10
+     * saida: valorCobrar
+     */
     public static void main(String[] args) {
         // Criar o objeto scanner para ler as entradas do usuário
         Scanner scanner = new Scanner(System.in);
@@ -38,27 +48,34 @@ public class Uni4Exe27 {
        }else if (minRest<30) {
         horacobrada = horas;
        }
+       if (horacobrada == 0) {
+        horacobrada = 1;
+       }
 
        DecimalFormat df = new DecimalFormat("#0.00");
      
         switch (horacobrada) {
             case 1:
                 valorCobrar = horacobrada * 5;
+                System.out.println("R$ "+df.format(valorCobrar));
                 break;
             case 2:
                 valorCobrar = horacobrada * 5;
+                System.out.println("R$ "+df.format(valorCobrar));
                 break;
             case 3:
                 valorCobrar = (float) (10 + (horacobrada - 2) * 7.5);
+                System.out.println("R$ "+df.format(valorCobrar));
                 break;
             case 4:
                 valorCobrar = (float) (10 + (horacobrada - 2) * 7.5);
+                System.out.println("R$ "+df.format(valorCobrar));
                 break;
             default:
                 valorCobrar = (25 + (horacobrada-4)*10);
+                System.out.println("R$ "+df.format(valorCobrar));
                 break;
         }
-        System.out.println("R$ "+df.format(valorCobrar));
         
 
 
@@ -67,5 +84,3 @@ public class Uni4Exe27 {
     }
 }
 
-    }
-}
