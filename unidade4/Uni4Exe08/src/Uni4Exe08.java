@@ -8,9 +8,8 @@ public class Uni4Exe08 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Informe uma letra "); 
         String letter = scanner.next();
-        char converted = letter.toUpperCase().chat;
-        if (converted.equals("A") || converted.equals("E") || converted.equals("I") 
-        || converted.equals("O") || converted.equals("U") ) { // nao tem como eu somente colocar as vogais e o || assim   if (converted==( A || e || i || o || u )) pois ele n reconhece
+        char converted = letter.toUpperCase().charAt(0);
+        if (converted == 'A'|| converted == 'E'||converted == 'I'||converted == 'O'||converted == 'A'||converted == 'U') { // nao tem como eu somente colocar as vogais e o || assim   if (converted==( A || e || i || o || u )) pois ele n reconhece
             //entao eu tenho q fazera variavel.equals("letra").
             System.out.println("é Vogal");
         }else{
